@@ -2,7 +2,6 @@ import pandas as pd
 from noshow_iq.preprocess import preprocess_input
 
 
-
 def test_preprocess_output_shape():
     sample_data = {
         "age": [30],

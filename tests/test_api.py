@@ -1,7 +1,9 @@
 from fastapi.testclient import TestClient
 from noshow_iq.api import app
 
+
 client = TestClient(app)
+
 
 def test_root_endpoint():
     response = client.get("/")
@@ -13,7 +15,7 @@ def test_predict_endpoint():
         "age": 30,
         "gender": "M",
         "appointment_day": "Wednesday",
-        "sms_received": 1
+        "sms_received": 1,
     }
 
     response = client.post("/predict", json=sample_payload)

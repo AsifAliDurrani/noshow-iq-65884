@@ -2,7 +2,6 @@ import numpy as np
 from noshow_iq.model import load_model, predict
 
 
-
 def test_model_load():
     model = load_model()
     assert model is not None

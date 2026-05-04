@@ -1,12 +1,14 @@
 import pandas as pd
 from noshow_iq.preprocess import preprocess_input
 
+
+
 def test_preprocess_output_shape():
     sample_data = {
         "age": [30],
         "gender": ["M"],
         "appointment_day": ["Wednesday"],
-        "sms_received": [1]
+        "sms_received": [1],
     }
 
     df = pd.DataFrame(sample_data)
